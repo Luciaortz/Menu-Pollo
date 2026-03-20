@@ -41,12 +41,10 @@ function mostrarSeccion(seccionElegida) {
 
     switch (seccionElegida) {
         case "inicio":
-            document.getElementById("inicio").style.display = "block";
-            document.getElementById("textodeinicio").innerHTML = textoSecciones;
+            document.getElementById("textodeinicio").innerHTML = textoSecciones.get("inicio");
             break;
 
         case "menu":
-            document.getElementById("menu").style.display = "block";
             generartablamenu();
             break;
         case "contacto":
@@ -62,7 +60,7 @@ function mostrarSeccion(seccionElegida) {
 function generartablamenu() {
 
     var contenedor = document.getElementById("contenedorMenu");
-    var tablamenu ="<table border=\'1\' cellpadding=\'8\' cellspacing=\'0\' width=\'80%\'>"
+    var tablamenu = "<table border='1' cellpadding='8' cellspacing='0' width='80%'>";
     tablamenu += "<tr><th>Plato</th><th>Descripción</th><th>Precio</th></tr>";
     for (var i = 0; i < platos.length; i++) {
         var plato = platos[i];
