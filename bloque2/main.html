@@ -19,14 +19,8 @@
 <hr />
 <section id="inicio">
     <h1>Pollo Asiático</h1>
-    <p>Sumérgete en una experiencia única de sabores orientales donde el pollo es el verdadero protagonista.
-        En nuestro restaurante combinamos tradición y creatividad para ofrecer platos inspirados en la cocina
-        asiática, preparados con ingredientes frescos, salsas auténticas y ese toque especial que encanta a nuestros
-        clientes. Cada receta está pensada para llevarte en un viaje de sabor, desde opciones suaves y dulces hasta
-        combinaciones intensas y especiadas.
+    <p id="textodeinicio"></p>
 
-        Nuestro Menú presenta los platos favoritos de quienes ya han disfrutado esta experiencia, ideales para
-        cualquier momento del día y perfectos para compartir o deleitarte por tu cuenta.</p>
     <strong>Conoce nuestra ubicacion .</strong>
     <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
         Ver ubicación en Google Maps
@@ -42,71 +36,8 @@
     <h2>Nuestro Menú</h2>
     <p>Los platos favoritos de nuestros clientes</p>
 
-    <table border="1" cellpadding="8" cellspacing="0" width="80%">
-        <thead>
-        <tr>
-            <th>Plato</th>
-            <th>Descripción</th>
-            <th>Precio</th>
-        </tr>
-        </thead>
+    <div id="contenedorMenu"></div>
 
-        <tbody>
-        <tr>
-            <td>Pollo Teriyaki</td>
-            <td>Pollo a la plancha con salsa teriyaki y arroz</td>
-            <td>$12.000</td>
-        </tr>
-
-        <tr>
-            <td>Pollo Kung Pao</td>
-            <td>Pollo salteado con maní, pimientos y chile seco</td>
-            <td>$13.500</td>
-        </tr>
-
-        <tr>
-            <td>Pollo Agridulce</td>
-            <td>Pollo crujiente con salsa agridulce y vegetales</td>
-            <td>$13.000</td>
-        </tr>
-
-        <tr>
-            <td>Pollo con Miel y Ajo</td>
-            <td>Pollo glaseado con miel, ajo y un toque de soya</td>
-            <td>$13.800</td>
-        </tr>
-
-        <tr>
-            <td>Pollo al Curry</td>
-            <td>Pollo en salsa curry con leche de coco y arroz jazmín</td>
-            <td>$14.000</td>
-        </tr>
-
-        <tr>
-            <td>Pollo Frito Estilo Coreano</td>
-            <td>Pollo crujiente con salsa picante coreana</td>
-            <td>$14.500</td>
-        </tr>
-
-        <tr>
-            <td>Arroz Frito con Pollo</td>
-            <td>Arroz salteado con pollo, huevo, vegetales y soya</td>
-            <td>$11.500</td>
-        </tr>
-
-        <tr>
-            <td>Chow Mein de Pollo</td>
-            <td>Fideos salteados con pollo y vegetales</td>
-            <td>$12.800</td>
-        </tr>
-
-        <tr>
-            <td>Sopa Ramen con Pollo</td>
-            <td>Caldo caliente con fideos, pollo y huevo</td>
-            <td>$14.200</td>
-        </tr>
-        </tbody>
-    </table>
 </section>
 <h2><strong>Nuestro plato popular </strong></h2>
 <iframe
@@ -123,7 +54,7 @@
 <hr />
 <section id="contacto">
     <h2>Reserva tu Mesa</h2>
-    <form action="#" method="POST">
+    <form action="#" method="POST" onsubmit="validarFormulario(event)">
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" name="nombre" required><br><br>
 
@@ -148,7 +79,6 @@
     <p>Barranquilla - Colombia</p>
     <p>Tel: +57 310 555 0202</p>
 </footer>
-
-
+<script src="main.js"></script>
 </body>
 </html>
