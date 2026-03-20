@@ -12,7 +12,7 @@ var platos=[
     { nombre: "Sopa Ramen con Pollo",descripcion: "Caldo caliente con fideos, pollo y huevo",precio: "$14.200"}
 ];
 
-//se hace un map para guardar el texto de inicio en aca seccion
+//se hace un map para guardar el texto de inicio en cada seccion
 
 var textoSecciones= new Map();
 textoSecciones.set("inicio", "Sumérgete en una experiencia única de sabores orientales donde el pollo es el verdadero protagonista.\n" +
