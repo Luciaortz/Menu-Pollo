@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MAIN</title>
+</head>
+
+<body>
+<!-- INCIA LA BARRA DE NAVEGACION-->
+<nav>
+  <ul>
+    <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+    <li><a href="#" onclick="mostrarSeccion('menu')">Menú</a></li>
+    <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+  </ul>
+</nav>
+
+<hr />
+<section id="inicio">
+  <h1>Pollo Asiático</h1>
+  <p id="textodeinicio"></p>
+
+  <strong>Conoce nuestra ubicacion .</strong>
+  <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+    Ver ubicación en Google Maps
+  </a>
+  <h2><strong>Nuestro plato popular </strong></h2>
+  <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/-ffEQP1dATw"
+          title="PLATO POPULAR"
+          frameborder="0"
+          allowfullscreen
+  ></iframe>
+  <br><br>
+</section>
+<hr />
+
+<!-- MENU-->
+<section id="menu">
+  <h2>Nuestro Menú</h2>
+  <p>Los platos favoritos de nuestros clientes</p>
+
+  <div id="contenedorMenu"></div>
+
+</section>
+
+<!-- CONTACTO-->
+<hr />
+<section id="contacto">
+  <h2>Reserva </h2>
+  <form action="#" method="POST" onsubmit="validarFormulario(event)">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido" required><br><br>
+
+    <label for="telefono">Contacto (teléfono o email):</label><br>
+    <input type="text" id="telefono" name="contacto" required><br><br>
+
+    <label for="hora">Hora de reserva:</label><br>
+    <input type="time" id="hora" name="hora" required><br><br>
+
+    <input type="submit" value="Reservar">
+  </form>
+  <p id="mensajeFormulario"></p>
+</section>
+<hr>
+<!-- INFORMACION GENERAL -->
+
+<footer>
+  <hr />
+  <p><strong>Pollo Asiático</strong> – Barranquilla, Colombia</p>
+  <p> +57 310 555 0202 |  contacto@polloasiatico.com</p>
+  <p>Horario: Lunes a Domingo 12:00 PM – 10:00 PM</p>
+  <p>
+    <a href="#">Instagram</a> |
+    <a href="#">Facebook</a> |
+    <a href="#">TikTok</a>
+  </p>
+  <p>© 2025 Pollo Asiático. Todos los derechos reservados.</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
