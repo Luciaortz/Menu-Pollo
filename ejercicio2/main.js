@@ -85,7 +85,7 @@ function validarFormulario(event) {
     if(nombre=="" || apellido==""|| contacto==""||hora==""){
         mensaje.innerHTML = "Complete todos los campos";
     }else {
-        mensaje.innerHTML = "Reserva recibida para" + nombre+ " " + apellido + " "+ "a las "+ hora + ".  ¡Te espermos!";
+        mensaje.innerHTML = "Reserva recibida para " + nombre+ " " + apellido + " "+ "a las "+ hora + ".  ¡Te espermos!";
     }
 }
 
